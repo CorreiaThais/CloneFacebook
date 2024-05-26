@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header';
+import Stories from './Stories';
+import FeedForm from './FeedForm';
+import FeedPost from './FeedPost';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Stories />
+      <FeedForm />
+      <FeedPost nome='Nome Sobrenome' conteudo='Texto do meu post' horario='10:21'/> 
+      <FeedPost nome='Nome Sobrenome' conteudo='Texto do meu post' horario='10:21'/> 
+      <FeedPost nome='Nome Sobrenome' conteudo='Texto do meu post' horario='10:21'/> 
     </div>
   );
 }
 
 export default App;
+
